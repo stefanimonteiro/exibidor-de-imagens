@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>exibidor de imagem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🖼️ Insira o link da imagem</h1>
+    <form id="imageForm" class="input-area">
+      <div class="input-icon">
+        🔗
+        <input type="text" id="imageLink" placeholder="Cole o link da imagem aqui" />
+      </div>
+      <button type="submit">Exibir</button>
+      <button type="button" id="clearBtn">Limpar</button>
+    </form>
+    <div id="error" class="error">
+      <span id="errorIcon" class="error-icon" style="display: none;">⚠️</span>
+      <span id="errorText"></span>
+    </div>
+    <div id="imageContainer" class="image-container"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
